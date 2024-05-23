@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    background: black;
+    position: fixed;
+    z-index: 1;
+    @media (max-width: 768px){
+        display: flex;
+        flex-direction: column;}
+    .logo {
+        display: flex;
+        flex-basis: 60%;
+        margin-left: 40px;
+        @media (max-width: 768px){
+            width: 45%;
+            margin-left: 100px;
+        }
+
+        img {
+            width: 45%;
+        }
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        flex-basis: 50%;
+        justify-content: space-evenly;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: sans-serif;
+        @media (max-width: 768px){
+            text-decoration: none !important;
+            color: orangered;
+            padding: 10px;
+            background: none;
+            border: none;
+            font-size: 15px;
+            font-weight: 900;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: orangered;
+            padding: 10px;
+            @media (max-width: 768px){    
+                }
+        }
+
+        a:hover {
+            color: orangered;
+            background-color: blue;
+            border-radius: 5px;
+        }
+
+        .boton{            
+            text-decoration: none !important;
+            color: orangered;
+            padding: 10px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            font-weight: 800;
+            font-family: sans-serif;
+            cursor: pointer;
+            @media (max-width: 768px){
+                text-decoration: none !important;
+                color: orangered;
+                padding: 10px;
+                background: none;
+                border: none;
+                font-size: 15px;
+                font-weight: 900;
+                font-family: sans-serif;
+                cursor: pointer;
+            }
+            
+        }
+
+        .boton:hover{
+            color: orangered;
+            background-color: blue;
+            border-radius: 5px;
+        }
+        .icono{
+            color: orangered;  
+            
+
+       }
+       
+    .botonlogin:hover{
+    color: orangered;
+    background-color: blue;
+    border-radius: 5px;
+    }
+}
+}

@@ -1,0 +1,64 @@
+.uneteya{
+    height: 100%;
+    color: black;
+    background: orangered;
+//-------Titulo--------//
+    .container{  
+        padding: 60px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 768px){
+            width: 99%;
+            font-size: 22px;
+        }
+
+        .title{
+
+            padding-bottom: 20px;
+
+        }
+
+
+        .inputs{
+            padding-bottom: 38px;
+            display: flex;
+            flex-direction: column;
+
+            input{
+
+                font-size: 23px;
+                margin: 6px 9px;
+
+            }
+
+            button{
+                margin-top: 10px;
+                font-size: 25px;
+                background-color: darkcyan;
+            }
+
+        }
+
+        .options{
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+
+            a{
+                color: black;
+                font-size: 20px;
+                padding: 5px 16px;
+            }
+
+            a:hover{
+                background-color: black;
+                color: white;
+            }
+
+        }
+
+    }   
+    }
+
