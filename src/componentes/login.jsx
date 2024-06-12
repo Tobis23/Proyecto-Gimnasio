@@ -1,9 +1,23 @@
 import styles from '../componentes/login.module.scss'
 import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { useEffect ,useState } from 'react';
+import axios from 'axios';
 
 export function Login ({setUser,closeModal2}) {
+
+    const [miembro, setMiembro] = useState([])
+
+    const fetchData = () => {
+        return axios.get("http://localhost:80/api/miembros")
+        .then((response) => setMiembro(response.data));
+    }
     
+    useEffect(() => {
+        fetchData();
+    }, [])
+
+
+
     const [values, setValues] = useState({
         user: "",
         password: "",
@@ -12,6 +26,7 @@ export function Login ({setUser,closeModal2}) {
     const [error, setError] = useState(false)
 
     const handleInputChange = (event) => {
+        console.log(miembro)
         const {name, value } = event.target;
         setValues({
             ...values,
@@ -22,6 +37,7 @@ export function Login ({setUser,closeModal2}) {
     const handleForm = (event) => {
         event.preventDefault();
         //console.log(values);
+        
 
         if (values.user != "admin" || values.password != "admin"){
             alert("Usuario o contraseña incorrecta")
