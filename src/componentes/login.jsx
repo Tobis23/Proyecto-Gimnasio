@@ -43,22 +43,43 @@ export function Login ({setUser,closeModal2}) {
     return (
         //-------Clases para Scss-------//
         <div className={styles.login}>
-            <form onSubmit={ handleForm }>
+        <form onSubmit={handleForm} className={styles.form}>
             <div className={styles.container}>
                 <div className={styles.title}>
-                    Bienvenido
+                    Iniciar Sesión
                 </div>
                 <div className={styles.inputs}>
-                    <input type="text" autoComplete="off" name="user" placeholder="Nombre de usuario" value= {values.user} onChange={handleInputChange} required/>      
-                    <input type="password" placeholder="Contraseña" name="password" value= {values.password} onChange={handleInputChange} required/>
-                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                    <div className={styles.inputgrupo}>
+                        <span>Usuario</span>
+                        <input
+                            type="text"
+                            autoComplete="off"
+                            name="user"
+                            placeholder=""
+                            value={values.user}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <div className={styles.inputgrupo}>
+                        <span>Contraseña</span>
+                        <input
+                            type="password"
+                            placeholder=""
+                            name="password"
+                            value={values.password}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <button type="submit">Login</button>
                 </div>
                 <div className={styles.options}>
-                    <Link to="/">¿Perdiste tu contraseña?</Link>
-                    <Link to="/">¿No tienes Cuenta? Registrate</Link>
+                    <Link to="/">¿No tienes cuenta? Regístrate</Link>
                 </div>
             </div>
-            </form>
-        </div>
+        </form>
+    </div>
+    
 )
 }

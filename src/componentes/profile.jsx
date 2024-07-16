@@ -14,7 +14,6 @@ export function Profile ({setUser}) {
                 openProfile && (
                 <div className={styles.lista}>
                     <ul className={styles.dropdown}>
-                        <li>Perfil</li>
                         <li><button className={styles.botonlogout} onClick={handleLogout}>Cerrar sesion</button></li>
                     </ul>
                 </div>

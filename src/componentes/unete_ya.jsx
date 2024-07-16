@@ -41,24 +41,56 @@ export function Unete_ya () {
     return (
       //-------Clases para Scss-------//
       <div className={styles.uneteya}>
-        <form onSubmit={ handleForm }>
-          <div className={styles.container}>
+    <form onSubmit={handleForm} className={styles.form}>
+        <div className={styles.container}>
             <div className={styles.title}>
-                Completa el formulario 
+                Formulario de registro
             </div>
             <div className={styles.inputs}>
-                <input type="text" autoComplete="off" placeholder="Correo electronico" name="email" value= {values.email} onChange={handleInputChange} required/>
-                <input type="text"autoComplete="off" name="user" placeholder="Nombre de usuario" value= {values.user} onChange={handleInputChange} required/>      
-                <input type="password" placeholder="Contraseña" name="password" value= {values.password} onChange={handleInputChange} required/>
-                <button type="submit" title="Ingresar" name="Ingresar">Crear cuenta</button>
+                <div className={styles.inputgrupo}>
+                    <span>Email</span>
+                    <input
+                        type="text"
+                        autoComplete="off"
+                        placeholder=""
+                        name="email"
+                        value={values.email}
+                        onChange={handleInputChange}
+                        required
+                    />
+                </div>
+                <div className={styles.inputgrupo}>
+                    <span>Usuario</span>
+                    <input
+                        type="text"
+                        autoComplete="off"
+                        name="user"
+                        placeholder=""
+                        value={values.user}
+                        onChange={handleInputChange}
+                        required
+                    />
+                </div>
+                <div className={styles.inputgrupo}>
+                    <span>Contraseña</span>
+                    <input
+                        type="password"
+                        placeholder=""
+                        name="password"
+                        value={values.password}
+                        onChange={handleInputChange}
+                        required
+                    />
+                </div>
+                <button type="submit">Crear cuenta</button>
             </div>
-            
             <div className={styles.options}>
-                <Link to="/Login">¿Ya tienes cuenta? Inicia sesion aqui!</Link>
+                <Link to="/Login">¿Ya tienes cuenta? Inicia sesión aquí!</Link>
             </div>
-          </div>
-          </form>
-      </div>
+        </div>
+    </form>
+</div>
+
       
     )
 }

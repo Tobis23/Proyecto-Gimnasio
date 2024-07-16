@@ -1,5 +1,6 @@
 import styles from '../componentes/actividades.module.scss'
 import axios from 'axios';
+import ejercicio from '../imagenes/ejercicio.png'
 import { useEffect, useState } from 'react';
 
 export function Actividades () {
@@ -30,15 +31,16 @@ export function Actividades () {
               {actividades!=null && 
 
               actividades.map((actividad, index) => 
-                <div className={styles.text}>
-                   <br></br>
-                   <span key = {index} >{actividad.nombre_actividad}</span>
-                   <br></br>
+                <div className={styles.ejercicio}>
+                   <div key = {index} className={styles.ejer}>
+                      <img src={ejercicio} alt="ejericio" />
+                      <span key = {index} >{actividad.nombre_actividad}</span>
+                      <strong> Conocer </strong>
+                   </div>
                 </div>
                 )}
           </div>
-          <div className={styles.imgActividades}>
-          </div>
+          
         </div>
       </div>
     )

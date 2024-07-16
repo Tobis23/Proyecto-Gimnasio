@@ -1,7 +1,6 @@
 .horariosventana{
     height: 100%;
-    color: black;
-    background: orangered;
+    color: white;
     width: 1130px;
     @media (max-width: 768px){
         width: 100%;
@@ -9,12 +8,12 @@
 //-------Titulo--------//
     .container{  
         padding: 55px 0px;
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         @media (max-width: 768px){
-            padding: 45px 0px;
+            padding: 115px 0px;
             width: 100%;
         }
 
@@ -29,31 +28,45 @@
         }
         .text{
             display: flex;
-            flex-direction: column;
-            width: 35%;
-            text-decoration: underline;
-            text-shadow: 0 0 #0027ff;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
             @media (max-width: 768px){
-                width: 60%;
+                width: 100%;
             }
         }
-        
-        .img{
-            background-image: url(/src/imagenes/hora1.png);
-            background-repeat: no-repeat;
-            height: 515px;
-            width: 117%;
-            background-position-x: right;
-            background-position-y: bottom;
-            position: absolute;
+
+        .horario{
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            width: 25%;
+            margin: 5px;
+            border-radius: 10px;
+            background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+            padding: 20px;
             @media (max-width: 768px){
-                background-image: none;
-                height: 450px;
-                width: 100%;
+                width: 80%;
+            }
         }
 
+        .hora{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
 
+            strong{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+
+            img{
+                width: 30%;
+            }
+
+        }
         
-    }
+       
 }
 }

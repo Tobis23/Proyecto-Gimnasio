@@ -13,13 +13,15 @@
 
 .modal-container {
   position: relative;
-  min-width: 500px;
-  max-width: 1130px;
-  max-height: 650px;
+  min-width: 710px;
+  max-width: 1186px;
+  min-height: 540px;
+  max-height: 700px;
   overflow-y: auto;
-  background-color: #fff;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  border-radius: 25px;
+  overflow-x: hidden;
 
-  
 }
 
 .modal-close {
@@ -39,7 +41,7 @@
     max-width: 250px;
     max-height: 650px;
     overflow-y: auto;
-    background-color: #fff; 
+    background-color: #000; 
   }
 
 }

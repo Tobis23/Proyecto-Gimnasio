@@ -27,7 +27,7 @@ export function Header() {
         <div className={styles.header}>
             <div className={styles.logo}>
                 <Link to="/">
-                    <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo" /><span>GymProyect</span>
                 </Link>
             </div>
             <div className={styles.menu}>

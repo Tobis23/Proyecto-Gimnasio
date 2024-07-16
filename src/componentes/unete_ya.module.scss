@@ -1,64 +1,99 @@
-.uneteya{
+.uneteya {
     height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.uneteya form {
+    width: 100%;
+    max-width: 600px; 
+}
+
+.uneteya .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.uneteya .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.uneteya .inputs {
+    width: 100%;
+    max-width: 400px; 
+}
+
+.uneteya .inputgrupo {
+    display: flex;
+    align-items: stretch; 
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.uneteya .inputgrupo span {
+    text-align: left; 
+    margin-bottom: 5px; 
+    width: 250px;
+}
+
+.uneteya input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.uneteya button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 20px;
+    background-color: white;
     color: black;
-    background: orangered;
-//-------Titulo--------//
-    .container{  
-        padding: 60px 0px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @media (max-width: 768px){
-            width: 99%;
-            font-size: 22px;
-        }
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
 
-        .title{
+.uneteya .options {
+    margin-top: 20px;
+    font-size: 16px;
+}
 
-            padding-bottom: 20px;
+.uneteya .options a {
+    color: white;
+    text-decoration: none;
+}
 
-        }
+.uneteya .options a:hover {
+    color: grey;
+}
 
-
-        .inputs{
-            padding-bottom: 38px;
-            display: flex;
-            flex-direction: column;
-
-            input{
-
-                font-size: 23px;
-                margin: 6px 9px;
-
-            }
-
-            button{
-                margin-top: 10px;
-                font-size: 25px;
-                background-color: darkcyan;
-            }
-
-        }
-
-        .options{
-            display: flex;
-            width: 90%;
-            flex-direction: column;
-
-            a{
-                color: black;
-                font-size: 20px;
-                padding: 5px 16px;
-            }
-
-            a:hover{
-                background-color: black;
-                color: white;
-            }
-
-        }
-
-    }   
+@media (max-width: 768px) {
+    .uneteya .title {
+        font-size: 24px;
     }
 
+    .uneteya .inputs {
+        max-width: 85%; 
+    }
+
+    .uneteya .inputgrupo span {
+        min-width: unset; 
+        text-align: left; 
+    }
+
+    .uneteya button {
+        font-size: 18px; 
+    }
+
+    .uneteya .options {
+        font-size: 14px; 
+    }
+}

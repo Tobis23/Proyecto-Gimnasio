@@ -34,7 +34,7 @@
 
 .botonlogin{
     text-decoration: none !important;
-    color: orangered;
+    color: white;
     padding: 10px;
     background: none;
     border: none;
@@ -45,7 +45,7 @@
     display: flex;
     @media (max-width: 768px){
         text-decoration: none !important;
-        color: orangered;
+        color: white;
         padding: 10px;
         background: none;
         border: none;
@@ -64,12 +64,12 @@
     flex-direction: column;
     padding: 10px;
     font-size: 15px;
-    color: orangered;
+    color: white;
 
 }
 .botonlogout{
             text-decoration: none !important;
-            color: orangered;
+            color: white;
             background: none;
             border: none;
             font-size: 13px;
@@ -79,8 +79,7 @@
             padding: 1px;
 }
     .botonlogout:hover{
-        color: orangered;
-        background-color: blue;
+        color: gray;
         border-radius: 5px;
 
     }        
